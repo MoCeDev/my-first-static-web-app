@@ -1,0 +1,28 @@
+/*
+Author: Jonne Lillhonga
+Date: 2025-09-26
+*/
+body{
+    background-color: rgb(186, 182, 182);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: black;
+    font-size: 2rem;
+}
+p{
+    color: rgb(255, 255, 255);
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+ol{
+    padding-left: 20px;
+    font-weight: bold;
+}
+a{
+    color: #e91e63;
+    font-weight: bold;
+}
