@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weekly Timetable</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <!--
+    Author: Ville Heikkiniemi
+    Date: 2025-10-06
+  -->
+
+  <header class="site-header">
+    <h1>Registeration page</h1>
+  </header>
+
+  <main class="content">
+    <!-- Top row split into two blocks -->
+    <div class="top-grid">
+      <!-- Student info (30%) -->
+      <section class="student-info" aria-label="Student information">
+        <h2 class="student-info-title">Information</h2>
+        <p><span class="student-name">Jonne Lillhonga</span></p>
+        <p><span class="student-group">NTIS24K</span></p>
+      </section>
+
+      <!-- Controls (70%): add course + day marks -->
+      <section class="controls" aria-label="Add course row">
+        <h2 class="controls-title">Register User</h2>
+
+        <form id="dataForm">
+        <input type ="hidden" id ="timestamp" name="timestamp">
+
+        <label>Full Name:
+            <input type="text" id="fullName" name="fullName">
+            <span class="error" id="nameError"></span>
+        </label>
+
+        <label>Email:
+            <input type="email" id="email" name="email">
+            <span class="error" id="emailError"></span>
+        </label>
+
+        <label>Phone
+            <input type="tel" id="phone" name="phone" placeholder="+358">
+            <span class="error" id="phoneError"></span>
+        </label>
+
+        <label>Birth Date
+            <input type="date" id="birthDate" name="birthDate">
+            <span class="error" id="dateError"></span>
+        </label>
+
+        <label>
+            <input type="checkbox" id="terms" name="terms">I accept the terms
+            <span class="error" id="termsError"></span>
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+    </section>
+    </div>
+
+    <!-- Table -->
+    <div class="table-wrap">
+      <table class="table" id="timetable">
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Birth Date</th>
+          </tr>
+        </thead>
+        <tbody id="dataTableBody">
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+</body>
+
+</html>
