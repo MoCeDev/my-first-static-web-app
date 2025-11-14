@@ -35,31 +35,41 @@
 
         <form id="dataForm">
         <input type ="hidden" id ="timestamp" name="timestamp">
-
+        
+        <div class="uusi-rivi">
         <label>Full Name:
-            <input type="text" id="fullName" name="fullName">
-            <span class="error" id="nameError"></span>
+        <input type="text" id="fullName" name="fullName">
+        <span class="error" id="nameError"></span>
         </label>
+        </div>
 
+        <div class="uusi-rivi">
         <label>Email:
-            <input type="email" id="email" name="email">
-            <span class="error" id="emailError"></span>
+        <input type="email" id="email" name="email">
+        <span class="error" id="emailError"></span>
         </label>
+        </div>
 
+        <div class="uusi-rivi">
         <label>Phone
             <input type="tel" id="phone" name="phone" placeholder="+358">
             <span class="error" id="phoneError"></span>
         </label>
+        </div>
 
+        <div class="uusi-rivi">
         <label>Birth Date
             <input type="date" id="birthDate" name="birthDate">
             <span class="error" id="dateError"></span>
         </label>
+        </div>
 
+        <div class="uusi-rivi">
         <label>
             <input type="checkbox" id="terms" name="terms">I accept the terms
             <span class="error" id="termsError"></span>
         </label>
+        </div>
 
         <button type="submit">Submit</button>
     </form>
