@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order – Lillhonga Auto Rent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Lillhonga Auto Rent</h1>
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#cars">Cars</a></li>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="order.html">Order</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="order-intro">
+      <h2>Place Your Rental Order</h2>
+      <p>Fill out the form below to request your rental vehicle. We’ll confirm availability and contact you with details.</p>
+    </section>
+
+    <section id="order-form">
+      <h2>Rental Order Form</h2>
+      <form action="thanks.html" method="post">
+        <fieldset>
+          <legend>Customer Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Rental Details</legend>
+          <label for="item">Item to Rent:</label>
+          <select id="item" name="item" required>
+            <option value="">-- Select a vehicle --</option>
+            <option value="compact">Compact Car</option>
+            <option value="suv">SUV</option>
+            <option value="luxury">Luxury Sedan</option>
+            <option value="van">Van</option>
+            <option value="convertible">Convertible</option>
+            <option value="electric">Electric Car</option>
+          </select>
+
+          <label for="start">Start Date:</label>
+          <input type="date" id="start" name="start" required>
+
+          <label for="end">End Date:</label>
+          <input type="date" id="end" name="end" required>
+
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="5" value="1" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label for="message">Special Wishes / Message:</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+
+          <label>
+            <input type="checkbox" name="terms" required>
+            I accept the rental terms and privacy policy
+          </label>
+
+          <label>
+            <input type="checkbox" name="newsletter">
+            Subscribe to newsletter
+          </label>
+        </fieldset>
+
+        <button type="submit" class="cta-btn">Send Order Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Lillhonga Auto Rent</p>
+    <p>Contact: info@lillhongaautorent.fi | +358 40 123 4567</p>
+    <p>Kokkola, Finland</p>
+  </footer>
+</body>
+</html>
